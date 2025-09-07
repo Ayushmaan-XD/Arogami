@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/predict",
+      "destination": "https://your-ml-api-url.com/predict"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
