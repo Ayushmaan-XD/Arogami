@@ -52,7 +52,7 @@ const WhoWeHelp = () => {
         whileInView="visible"
         viewport={{ once: true, amount: 0.5 }}
       >
-        Who we help?
+        Connecting Care Networks
       </motion.h1>
 
       <motion.div
