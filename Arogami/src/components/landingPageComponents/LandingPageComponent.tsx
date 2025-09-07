@@ -44,7 +44,7 @@ const LandingPageComponent = () => {
         <Container>
             <HeroSection />
             <HeroSectionBottomDiv />
-            <MarqueeComponent/>
+            
             <WhoWeHelp/>
             <ScrollVelocity 
                 texts={[
