@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/api/predict",
-      "destination": "https://your-ml-api-url.com/predict"
+      "destination": "https://ayushmaan-xd-arogami.hf.space/predict"
     },
     {
       "source": "/(.*)",
