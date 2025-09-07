@@ -120,7 +120,7 @@ export const ScrollVelocity: React.FC<ScrollVelocityProps> = ({
     });
 
     const directionFactor = useRef<number>(1);
-    useAnimationFrame((t, delta) => {
+    useAnimationFrame((_, delta) => {
       let moveBy = directionFactor.current * baseVelocity * (delta / 1000);
 
       if (velocityFactor.get() < 0) {
@@ -133,7 +133,7 @@ export const ScrollVelocity: React.FC<ScrollVelocityProps> = ({
       baseX.set(baseX.get() + moveBy);
     });
 
-    const spans = [];
+    const spans: JSX.Element[] = [];
     for (let i = 0; i < numCopies!; i++) {
       spans.push(
         <span className={className} key={i} ref={i === 0 ? copyRef : null}>

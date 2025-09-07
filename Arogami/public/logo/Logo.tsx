@@ -1,6 +1,8 @@
 import * as React from "react";
 
-function Logo(props) {
+interface LogoProps extends React.ImgHTMLAttributes<HTMLImageElement> {}
+
+function Logo(props: LogoProps) {
   return (
     <img
       src="/navbar/Arogami-logo-main.png"
