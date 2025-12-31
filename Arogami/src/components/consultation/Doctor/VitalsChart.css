@@ -1,0 +1,85 @@
+.vitals-chart-container {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.chart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.chart-header h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+}
+
+.chart-unit {
+    font-size: 0.9rem;
+    color: #666;
+    font-weight: 500;
+}
+
+.vitals-chart {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.chart-point {
+    cursor: pointer;
+    transition: r 0.2s ease;
+}
+
+.chart-point:hover {
+    r: 7;
+}
+
+.chart-no-data {
+    text-align: center;
+    padding: 3rem;
+    color: #999;
+    font-size: 1rem;
+}
+
+.chart-legend {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1.5rem;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.legend-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+@media (max-width: 768px) {
+    .vitals-chart-container {
+        padding: 1rem;
+    }
+
+    .chart-header h4 {
+        font-size: 1rem;
+    }
+
+    .chart-unit {
+        font-size: 0.85rem;
+    }
+}

@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/predict",
+      "destination": "https://ayushmaan-xd-arogami.hf.space/predict"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
